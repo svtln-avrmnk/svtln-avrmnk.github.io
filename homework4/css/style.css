@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    display:flex;
+    background: #efefef;
+}
+.camera{
+    background: #37b0ae;
+    width:452px;
+    height: 615px;
+    position: relative;
+    top: 55px;
+    left: 220px;
+}
+.camera-text{
+    font-size: 30px;
+    color: white;
+   padding: 12px 12px;
+}
+
+.camera-image{
+    position: absolute;
+    top:100px;
+    left:-45px;
+    width:398px;
+    height: 405px;
+}
+.camera-image:hover{
+    transform: scale(1.2) translateX(-50px);
+
+}
+.camera-image::before{
+    content:'';
+    background:url(../img/camera-shadow.png) no-repeat center/cover;
+    width: 530px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    top:250px;
+    left:10px;
+}
+
+.foto{
+    position:absolute;
+    top:150px;
+    left:407px;
+    z-index: 10;
+}
+.foto__image{
+    background:rgba(255, 255, 255,0.5);
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px;
+}
+.foto__image:hover{
+    z-index: 13;
+    transform: scale(1.8);
+}
+.foto__image img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.foto__image-small{
+    width: 90px;
+    height: 90px;
+}
+.foto__image-small img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    object-position:-61px -30px;
+}
+
+.productInfo{
+    background: white;
+    width:520px;
+    height:705px;
+    position:relative;
+    top: 10px;
+    left:220px;
+    padding-left: 80px;
+}
+h1{
+    padding-top: 70px;
+    font-family: 'Myriad Pro', serif;
+    font-size: 31pt;
+}
+h2{
+    font-family: 'Myriad Pro', serif;
+    font-size: 15pt;
+}
+h3{
+    padding-top: 50px;
+    font-family: 'Myriad Pro', serif;
+    font-size: 13pt;
+}
+.description{
+    padding-top:10px;
+    line-height: 1.8;
+    list-style: none;
+    font-size: 13pt;
+}
+.description li::before{
+    content: '';
+    display: inline-block;
+    background: #37b0ae;
+    width:7px;
+    height: 7px;
+    margin-right: 7px;
+}
+.box{
+    display: flex;
+    list-style: none;
+    padding-top:40px;
+}
+.box li{
+    margin-right: 30px;
+    font-size: 12pt;
+}
+.quantity p{
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-size: 12pt;
+}
+.button{
+    display:flex;
+    margin:0;
+    vertical-align:top;
+}
+.button-increase, .button-decrease{
+    width: 42px;
+    height: 36px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+.button-increase::before, .button-decrease::before, .button-increase::after{
+    content:'';
+    height: 1px;
+    background: black;
+    top: 50%;
+    left:25%;
+    width:40%;
+    position: absolute;
+    bottom: 50%;
+}
+.button-increase::after{
+    transform:  rotate(90deg);
+}
+input{
+    font-size: 19px;
+    width: 42px;
+    height: 36px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+.price{
+    padding-top: 15px;
+    display:flex;
+    align-items: flex-end;
+}
+.price-new{
+    font-size: 43px;
+    font-family: 'Myriad Pro', serif;
+}
+.price-old{
+    padding-left:12px ;
+    padding-bottom: 6px;
+    font-size: 20px;
+    font-family: 'Myriad Pro', serif;
+}
+
+.add{
+    display:flex;
+    padding-top: 15px;
+}
+.addCart{
+    font-size: 23px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    background: #37b0ae;
+    width:220px ;
+    height:35px ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.addWish{
+    font-size: 23px;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid black;
+    width:220px ;
+    height:34px ;
+    cursor: pointer;
+}
+

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    width: 270px;
+    height: 270px;
+    background: darkred;
+    position:absolute;
+    top:70px;
+    left: 400px;
+}
+.box1:hover{
+    transform: scale(1.2);
+    z-index: 100;
+
+}
+
+.circle{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: grey;
+    right:7px;
+    bottom:7px;
+    border-radius: 50%;
+
+}
+
+.circle:hover::before, .circle:hover::after{
+    content:'';
+    display: block;
+    height: 3px;
+    background: black;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+
+}
+.circle:hover::after {
+    transform: rotate(90deg);
+}
+
+.box2{
+    width: 270px;
+    height: 270px;
+    background:green;
+    position: absolute;
+    top:90px;
+    left: 620px;
+}
+.box2:hover {
+    transform: scale(1.2);
+    z-index: 100;
+}
+
+.box3{
+    width: 270px;
+    height: 270px;
+    background:blue;
+    position: absolute;
+    top:310px;
+    left: 395px;
+}
+.box3:hover {
+    transform: scale(1.2);
+    z-index: 100;
+}
+
+.box4{
+    width: 270px;
+    height: 270px;
+    background:yellow;
+    position:absolute;
+    top:340px;
+    left: 635px;
+
+}
+
+.box4:hover {
+    transform: scale(1.2);
+    z-index: 100;
+}
